@@ -1,0 +1,687 @@
+html,body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-size: 12px;
+	font-family: Tahoma, Verdana;
+	color: #4878ba;
+}
+
+.clear {
+	clear: both;
+}
+
+div#body1,
+div#body2 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+}
+
+div#body1 {
+	background: url(../img/background1.jpg) repeat-x 0 0;
+	min-height: 212px;
+}
+
+div#body2 {
+	background: url(../img/background2.jpg) repeat-x 0 0;
+	min-height: 463px;
+}
+
+div.content1 {
+	padding: 46px 0px 0px 100px;
+}
+
+div#top {
+	padding: 0px 0px 0px 0px;
+}
+
+div#logo {
+	/*background: transparent url(../img/logo.png) no-repeat 0 0;
+	width: 189px;
+	height: 189px;*/
+	/*position: absolute;
+	left: 40px;
+	top: 20px;*/
+}
+
+div#breadcrumb {
+	height: 38px;
+}
+
+div#center {
+	min-height: 350px;
+	position: relative;
+	max-width: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+div#lmenu {
+	/*width: 250px;*/
+	/*min-height: 247px;*/
+	/*z-index: 200;*/
+	/*float: left;*/
+	margin: 40px 0px 0px 60px;
+	position: relative;
+	max-width: 1000px;
+}
+div#lmenu img {
+	/*position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;*/
+}
+
+div#content {
+	/*background: url(../img/lmenu.png) no-repeat 0 0;*/
+	padding: 20px 0px 0px 0px;
+	z-index: 100;
+	position: relative;
+	min-height: 290px;
+	height: 100%;
+	/*overflow-x: hidden;*/
+}
+
+.flex_container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: flex-start;
+}
+.flex_item {
+	order: 0;
+	flex-grow: 0; /* default 0 */
+	flex-shrink: 1; /* default 1 */
+	flex-basis: auto; /* default auto */
+	align-self: auto;
+}
+.flex_nowrap {
+	flex-wrap: nowrap;
+}
+
+/* bof left_menu/////////////////////////////////////////////////////////////// */
+ul#left_menu {
+	margin: 0;
+	padding: 0px;
+	z-index: 1;
+	position: relative;
+	background: rgba(255,255,255,0.7);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+ul#left_menu li {
+	margin: 0px;
+	padding: 5px 20px 5px 20px;
+	list-style: none;
+	background: transparent url(../img/list_style_1.gif) no-repeat 0 50%;
+}
+ul#left_menu li a {
+	/*display: block;*/
+	color: #4574b7;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	width: 130px;
+	padding: 3px 0px 3px 3px;
+}
+ul#left_menu li a:hover {
+	color: #d70807;
+	text-decoration: underline;
+}
+/* eof left_menu/////////////////////////////////////////////////////////////// */
+
+/* bof breadcrumb/////////////////////////////////////////////////////////////// */
+ul#bc,
+ul#bc li,
+ul#bc li a {
+	display: block;
+}
+ul#bc {
+	margin: 0px 5px;
+	padding: 0px;
+}
+ul#bc li {
+	float: left;
+	margin: 0px;
+	padding: 9px 0px 0px 33px;
+	list-style: none;
+	background: transparent url(../img/list_style_2.gif) no-repeat 10px 15px;
+}
+ul#bc li.home {
+	padding-left: 0px;
+	background: none;
+}
+ul#bc li a {
+	color: #4574b7;
+	font-size: 14px;
+	text-decoration: underline;
+	padding: 3px 3px 3px 3px;
+}
+ul#bc li a:hover {
+	color: #d70807;
+	text-decoration: none;
+}
+/* eof breadcrumb/////////////////////////////////////////////////////////////// */
+
+/* bof window 1 /////////////////////////////////////////////////////////////// */
+div.w1,
+div.w2 {
+	/*margin: 0px 10px 10px 10px;*/
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+}
+div.w1 div.header,
+div.w2 div.header {
+	background: transparent url(../img/w1_h_l.png) no-repeat 0 0;
+}
+div.w1 div.header div.r,
+div.w2 div.header div.r {
+	background: transparent url(../img/w1_h_r.png) no-repeat 100% 0;
+	padding: 0px 10px;
+}
+div.w1 div.header div.r div.c,
+div.w2 div.header div.r div.c {
+	background: transparent url(../img/w1_h_bg.png) repeat-x 0 0;
+
+}
+div.w1 div.header,
+div.w1 div.header div.r,
+div.w1 div.header div.r div.c,
+div.w2 div.header,
+div.w2 div.header div.r,
+div.w2 div.header div.r div.c {
+	/*width: 100%;*/
+	height: 57px;
+	position: relative;
+}
+div.w1 div.header div.r div.c div.text,
+div.w2 div.header div.r div.c div.text {
+	padding: 30px 0px 0px 30px;
+}
+div.w1 div.header div.r div.c div.text div.title,
+div.w2 div.header div.r div.c div.text div.title {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+div.w1 div.body,
+div.w2 div.body {
+	background: transparent url(../img/w1_c_l.png) repeat-y 0 0;
+	overflow-x: auto;
+}
+div.w1 div.body div.r,
+div.w2 div.body div.r {
+	background: transparent url(../img/w1_c_r.png) repeat-y 100% 0;
+	padding: 0px 2px;
+}
+div.w1 div.body div.r div.c,
+div.w2 div.body div.r div.c {
+	background: #eaf7fd;
+}
+div.w1 div.body,
+div.w1 div.body div.r,
+div.w1 div.body div.r div.c,
+div.w2 div.body,
+div.w2 div.body div.r,
+div.w2 div.body div.r div.c {
+	/*width: 100%;*/
+	position: relative;
+}
+
+div.w1 div.footer,
+div.w2 div.footer {
+	background: transparent url(../img/w1_f_l.png) no-repeat 0 0;
+}
+div.w1 div.footer div.r,
+div.w2 div.footer div.r {
+	background: transparent url(../img/w1_f_r.png) no-repeat 100% 0;
+	padding: 0px 10px 0px 10px;
+}
+div.w1 div.footer div.r div.c,
+div.w2 div.footer div.r div.c {
+	background: transparent url(../img/w1_f_bg.png) repeat-x 0 0;
+}
+div.w1 div.footer,
+div.w1 div.footer div.r,
+div.w1 div.footer div.r div.c,
+div.w2 div.footer,
+div.w2 div.footer div.r,
+div.w2 div.footer div.r div.c {
+	/*width: 100%;*/
+	height: 9px;
+	position: relative;
+}
+/* eof window 1 /////////////////////////////////////////////////////////////// */
+
+/* bof table 1 /////////////////////////////////////////////////////////////// */
+table.t1,
+table.t2 {
+	border: none;
+	border-top: 2px solid #233e7e;
+	border-left: 2px solid #233e7e;
+	position: relative;
+	z-index: 3;
+}
+table.t1 thead tr td,
+table.t1 tbody tr td,
+table.t1 tbody tr th,
+table.t2 thead tr td,
+table.t2 tbody tr td,
+table.t2 tbody tr th {
+	border-bottom: 2px solid #233e7e;
+	border-right: 2px solid #233e7e;
+	
+}
+table.t1 thead tr td,
+table.t2 thead tr td {
+	height: 34px;
+	background: transparent url(../img/w1_h_bg.png) repeat-x 0 -21px;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0px 10px 0px 10px;
+	max-width: 500px;
+	/*white-space: nowrap;*/
+}
+table.t1 tbody tr td,
+table.t1 tbody tr th,
+table.t2 tbody tr td,
+table.t2 tbody tr th {
+	padding: 5px;
+	word-break: break-all;
+}
+table.t1 tbody tr.r1 td,
+table.t1 tbody tr.r1 th,
+table.t2 tbody tr.r1 td,
+table.t2 tbody tr.r1 th {
+	background-color: #EAF7FD;
+}
+table.t1 tbody tr.r2 td,
+table.t1 tbody tr.r2 th,
+table.t2 tbody tr.r2 td,
+table.t2 tbody tr.r2 th {
+	background-color: #ffffff;
+}
+
+table.t1 tbody tr.click td,
+table.t2 tbody tr.click td,
+table.t1 tbody tr td.click,
+table.t2 tbody tr td.click {
+	cursor: pointer;
+}
+
+table.t1 tbody tr *,
+table.t2 tbody tr * {
+	color: #386098;
+}
+table.t1 tbody tr td,
+table.t1 tbody tr th,
+table.t2 tbody tr td,
+table.t2 tbody tr th {
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
+table.t1 tbody tr.date_out td,
+table.t1 tbody tr.date_out th,
+table.t2 tbody tr.date_out td,
+table.t2 tbody tr.date_out th {
+	background-color: #d70807;
+}
+table.t1 tbody tr.date_out *,
+table.t2 tbody tr.date_out * {
+	color: #eaf7fd;
+}
+
+table.t1 tbody tr.complete td,
+table.t1 tbody tr.complete th,
+table.t2 tbody tr.complete td,
+table.t2 tbody tr.complete th {
+	background-color: #a5e2c0;
+}
+table.t1 tbody tr.complete *,
+table.t2 tbody tr.complete * {
+	color: #464646;
+}
+
+table.t1 tbody tr.not_full_complete td,
+table.t1 tbody tr.not_full_complete th,
+table.t2 tbody tr.not_full_complete td,
+table.t2 tbody tr.not_full_complete th {
+	background-color: #f9bfbf;
+}
+table.t1 tbody tr.not_full_complete *,
+table.t2 tbody tr.not_full_complete * {
+	color: #464646;
+}
+
+table.t1 tbody tr.date_today td,
+table.t1 tbody tr.date_today th,
+table.t2 tbody tr.date_today td,
+table.t2 tbody tr.date_today th {
+	background-color: #a5e2c0;
+}
+table.t1 tbody tr.date_today *,
+table.t2 tbody tr.date_today * {
+	color: #464646;
+}
+
+table.t1 tbody tr.click td,
+table.t1 tbody tr.click th,
+table.t2 tbody tr.click td,
+table.t2 tbody tr.click th {
+	background-color: #ffbb3c;
+}
+table.t1 tbody tr.click *,
+table.t2 tbody tr.click * {
+	color: #464646;
+}
+table.t1 tbody tr.hover td,
+table.t2 tbody tr.hover td,
+table.t1 tbody tr.hover th,
+table.t2 tbody tr.hover th {
+	background-image: url(../img/tr_hover_bg.png);
+	/*background-image: url(../img/tr_hover_bg_5.png);*/
+}
+
+table.t1 tbody tr input,
+table.t2 tbody tr input {
+	color: #233e7e !important;
+}
+
+table.t1 tbody tr img,
+table.t2 tbody tr img {
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	height: auto;
+}
+
+table.t1 tbody tr td a,
+table.t1 tbody tr th a {
+	text-decoration: underline;
+}
+table.t1 tbody tr td a:hover,
+table.t1 tbody tr th a:hover {
+	text-decoration: none;
+}
+/* eof table 1 /////////////////////////////////////////////////////////////// */
+
+/* bof buttons /////////////////////////////////////////////////////////////// */
+form.button_edit,
+form.button_delete {
+	margin: 0px;
+	padding: 0px;
+}
+form.button_edit fieldset,
+form.button_delete fieldset {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+form.button_edit fieldset input.btn_edit,
+form.button_delete fieldset input.btn_delete {
+	border: none;
+	cursor: pointer;
+	width: 27px;
+	height: 27px;
+	margin: 0px;
+	padding: 0px;
+}
+
+form.button_edit fieldset input.btn_edit {
+	background: url(../img/edit.gif) no-repeat 50% 50%;
+}
+form.button_delete fieldset input.btn_delete {
+	background: url(../img/delete.gif) no-repeat 50% 50%;
+}
+/* eof buttons /////////////////////////////////////////////////////////////// */
+
+/* bof form add/////////////////////////////////////////////////////////////// */
+form#f_add,
+form#f_add fieldset {
+	margin: 0px;
+	padding: 0px;
+}
+form#f_add fieldset {
+	border: none;
+}
+/* eof form add/////////////////////////////////////////////////////////////// */
+
+/* bof f_auth/////////////////////////////////////////////////////////////// */
+form#f_auth {
+	width: 675px;
+	height: 165px;
+	background: url(../img/auth_form.png) repeat-x 0 0;
+	display: block;
+}
+form#f_auth fieldset {
+	border: none;
+}
+form#f_auth,
+form#f_auth fieldset {
+	margin: 0px;
+	padding: 0px;
+}
+/* bof f_auth/////////////////////////////////////////////////////////////// */
+
+/* bof form logout/////////////////////////////////////////////////////////////// */
+form#f_logout {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+
+}
+form#f_logout fieldset {
+	border: none;
+}
+form#f_logout,
+form#f_logout fieldset {
+	margin: 0px;
+	padding: 0px;
+}
+/* bof form logout/////////////////////////////////////////////////////////////// */
+
+/* bof table add/////////////////////////////////////////////////////////////// */
+table#t_add tbody tr td.data,
+table#t_add tbody tr td.label {
+	padding: 10px 0px 0px 10px;
+}
+table#t_add tfoot tr td {
+	padding: 20px 0px 10px 10px;
+}
+table#t_add tbody tr td label {
+	display: block;
+}
+/* eof table add/////////////////////////////////////////////////////////////// */
+
+/* bof t_auth/////////////////////////////////////////////////////////////// */
+table#t_auth {
+	margin: 0px 0px 0px 360px;
+	width: 300px;
+	color: #ffffff;
+}
+
+table#t_auth thead tr td div {
+	background: transparent url(../img/block.png) no-repeat scroll 0 60%;
+	width: 11px;
+	height: 13px;
+	margin-right: 10px;
+	display: block;
+}
+
+table#t_auth thead tr th label {
+	font-size: 14px;
+	text-transform: uppercase;
+	display: block;
+	text-align: left;
+	line-height: 30px;
+}
+table#t_auth thead tr th label,
+table#t_auth thead tr td div {
+	margin-top: 23px;
+	height: 30px;
+	padding: 0px;
+}
+
+table#t_auth thead tr th div.sr {
+	height: 13px;
+}
+
+table#t_auth thead tr th label,
+table#t_auth tbody tr td label {
+	font-weight: bold;
+}
+
+table#t_auth tbody tr td label {
+	padding: 5px 10px 5px 0px;
+	display: block;
+}
+
+table#t_auth tbody tr td label,
+table#t_auth tbody tr td div.in_text,
+table#t_auth tbody tr th input {
+	margin-top: 10px;
+}
+table#t_auth tbody tr th input {
+	background: transparent url(../img/button_submit.png) no-repeat scroll 0 0;
+	border: none;
+	width: 64px;
+	height: 23px;
+	cursor: pointer;
+	padding: 0px;
+}
+/* bof t_auth/////////////////////////////////////////////////////////////// */
+
+/* bof input text/////////////////////////////////////////////////////////////// */
+div.in_text {
+	background: transparent url(../img/input_text_left.png) no-repeat scroll 0 0;
+}
+div.in_text div.in {
+	background: transparent url(../img/input_text_right.png) no-repeat scroll 100% 0;
+}
+div.in_text div.in input{
+	background: transparent;
+	border: none;
+	padding: 0px;
+	text-indent: 5px;
+	width: 148px;
+	height: 18px;
+	margin: 1px;
+}
+div.in_text,
+div.in_text div.in{
+	width: 150px;
+	height: 20px;
+}
+/* eof input text/////////////////////////////////////////////////////////////// */
+
+/* bof message/////////////////////////////////////////////////////////////// */
+div.message_success {
+	color: green;
+}
+div.message_warning {
+	color: orange;
+}
+div.message_error {
+	color: red;
+}
+div.message_success,
+div.message_warning,
+div.message_error {
+	padding: 5px;
+	/*border: 1px solid;*/
+	width: auto;
+	display: block;
+	text-align: center;
+	clear: both;
+	margin: 5px;
+}
+/* eof message/////////////////////////////////////////////////////////////// */
+
+.hidden {
+	display: none;
+}
+
+div.control_panel form {
+	padding: 5px 0px 5px 0px;
+}
+form.filtering fieldset,
+form#save_list fieldset {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+form.filtering fieldset label {
+	margin: 0px 0px 0px 20px;
+}
+
+/* bof navigation/////////////////////////////////////////////////////////////// */
+div.navigation {
+	padding: 10px 0px 10px 0px;
+}
+div.navigation div.label {
+	float: left;
+	padding: 0px 10px 0px 17px;
+}
+div.navigation a {
+	padding: 5px 5px 5px 5px;
+	margin: 0px 2px 0px 2px;
+	border: 1px solid #4878ba;
+	text-decoration: none;
+	color: #4878ba;
+}
+div.navigation a:hover {
+	background: #eaf7fd;
+}
+div.navigation a.page_active {
+	background: #4878ba;
+	color: #eaf7fd;
+}
+div.navigation a.all {
+	margin-left: 50px;
+}
+/* eof navigation/////////////////////////////////////////////////////////////// */
+
+/* bof loading*/
+.loading {
+	min-height: 20px;
+	position: relative;
+}
+.loading:after {
+	content: "";
+	display: block;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.5) url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIiBjbGFzcz0idWlsLWhvdXJnbGFzcyI+PHJlY3QgeD0iMCIgeT0iMCIgZmlsbD0ibm9uZSIgY2xhc3M9ImJrIj48L3JlY3Q+PGc+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjZjY2NjIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZD0iTTU4LjQsNTEuN2MtMC45LTAuOS0xLjQtMi0xLjQtMi4zczAuNS0wLjQsMS40LTEuNCBDNzAuOCw0My44LDc5LjgsMzAuNSw4MCwxNS41SDcwSDMwSDIwYzAuMiwxNSw5LjIsMjguMSwyMS42LDMyLjNjMC45LDAuOSwxLjQsMS4yLDEuNCwxLjVzLTAuNSwxLjYtMS40LDIuNSBDMjkuMiw1Ni4xLDIwLjIsNjkuNSwyMCw4NS41aDEwaDQwaDEwQzc5LjgsNjkuNSw3MC44LDU1LjksNTguNCw1MS43eiIgY2xhc3M9ImdsYXNzIj48L3BhdGg+PGNsaXBQYXRoIGlkPSJ1aWwtaG91cmdsYXNzLWNsaXAxIj48cmVjdCB4PSIxNSIgeT0iMjAiIHdpZHRoPSI3MCIgaGVpZ2h0PSIyNSIgY2xhc3M9ImNsaXAiPjxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9ImhlaWdodCIgZnJvbT0iMjUiIHRvPSIwIiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgdmxhdWVzPSIyNTswOzAiIGtleVRpbWVzPSIwOzAuNTsxIj48L2FuaW1hdGU+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0ieSIgZnJvbT0iMjAiIHRvPSI0NSIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiIHZsYXVlcz0iMjA7NDU7NDUiIGtleVRpbWVzPSIwOzAuNTsxIj48L2FuaW1hdGU+PC9yZWN0PjwvY2xpcFBhdGg+PGNsaXBQYXRoIGlkPSJ1aWwtaG91cmdsYXNzLWNsaXAyIj48cmVjdCB4PSIxNSIgeT0iNTUiIHdpZHRoPSI3MCIgaGVpZ2h0PSIyNSIgY2xhc3M9ImNsaXAiPjxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9ImhlaWdodCIgZnJvbT0iMCIgdG89IjI1IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgdmxhdWVzPSIwOzI1OzI1IiBrZXlUaW1lcz0iMDswLjU7MSI+PC9hbmltYXRlPjxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9InkiIGZyb209IjgwIiB0bz0iNTUiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiB2bGF1ZXM9IjgwOzU1OzU1IiBrZXlUaW1lcz0iMDswLjU7MSI+PC9hbmltYXRlPjwvcmVjdD48L2NsaXBQYXRoPjxwYXRoIGQ9Ik0yOSwyM2MzLjEsMTEuNCwxMS4zLDE5LjUsMjEsMTkuNVM2Ny45LDM0LjQsNzEsMjNIMjl6IiBjbGlwLXBhdGg9InVybCgjdWlsLWhvdXJnbGFzcy1jbGlwMSkiIGZpbGw9IiNlMGI2NzUiIGNsYXNzPSJzYW5kIj48L3BhdGg+PHBhdGggZD0iTTcxLjYsNzhjLTMtMTEuNi0xMS41LTIwLTIxLjUtMjBzLTE4LjUsOC40LTIxLjUsMjBINzEuNnoiIGNsaXAtcGF0aD0idXJsKCN1aWwtaG91cmdsYXNzLWNsaXAyKSIgZmlsbD0iI2UwYjY3NSIgY2xhc3M9InNhbmQiPjwvcGF0aD48YW5pbWF0ZVRyYW5zZm9ybSBhdHRyaWJ1dGVOYW1lPSJ0cmFuc2Zvcm0iIHR5cGU9InJvdGF0ZSIgZnJvbT0iMCA1MCA1MCIgdG89IjE4MCA1MCA1MCIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiIGR1cj0iMXMiIHZhbHVlcz0iMCA1MCA1MDswIDUwIDUwOzE4MCA1MCA1MCIga2V5VGltZXM9IjA7MC43OzEiPjwvYW5pbWF0ZVRyYW5zZm9ybT48L2c+PC9zdmc+") no-repeat 50% 50%;
+}
+/* eof loading*/
+
+div.table_container {
+	overflow-x: auto;
+	max-width: 100%;
+}
+
+.w100 {
+	width: 100%;
+}
